@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20b179fc-53b1-4f5a-a5da-04e5bd9c1ef9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/04_Risk_Model.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/NL_all_with_comments_RD_New_ready.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/skewed_leaves/short_run_4mod_v1.0_error_metrics_NESTI_20.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor/dump.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor/testing_SPL100_NESTI10.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor/testing_SPL100_NESTI20.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor/testing_SPL100_NESTI50.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/tifs/Exposure.tif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/tifs/Hazard.tif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/tifs/Risk_TickBites.tif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/tifs/Risk_TickBites_RD_New.tif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/analysis/13_regression_risk_poisson_leaves_predict.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/analysis/14_check_fitting_of_distributions.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/carpentry/06_add_hazard_column_v1.0.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/mapping/00_prepare_maps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/mapping/01_prepare_maps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/mapping/02_prepare_four_maps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.0/playground/13_stubs.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/00_risk_per_BBG.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/01_risk_per_LGN.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/02_taylor_diagrams.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_test_all_spl.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/04_check_fitting_of_distributions_all_spl.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/05_taylor_diagrams_all_spl.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/06_taylor_diagrams_all_spl_batches_style.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/07_compare_with_exposure.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/08_compare_with_tickbites.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/09_four_exposure_layers.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/10_count_singmats.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/11_plot_all_histograms.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/12_predictions_vs_truevals.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/13_explore_risk_skewed_leaves.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/14_explore_risk_skewed_leaves.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/analysis/15_plot_all_histograms_nozeros.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/00_fix_testing_one_run.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/01_plot_error_metrics.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/02_test_predict.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/03_tomap.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/04_find_p_and_lambda.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/05_make_maps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/06_make_five_maps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/07_is_taylor_working.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/08_samples_per_leaf_ensemble.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/09_tick_bites_gardens.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/10_land_cover_of_gardeners.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2_logscale.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/12_tb_above_thirty.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/13_make_tick_bite_risk_map_logscale.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/14_animation_hazard.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/15_animation_hazard_basemap.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/16_animation_hazard_basemap2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/v1.1/playground/band.py" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/1km/nl_all_risk_perpixel_features_v1.12.csv" afterPath="$PROJECT_DIR$/data/no_split/1km/nl_all_risk_perpixel_features_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/1km/nl_risk_features_v1.12b.csv" afterPath="$PROJECT_DIR$/data/no_split/1km/nl_risk_features_v1.12b.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/1km/nl_tb_per_pixel.csv" afterPath="$PROJECT_DIR$/data/no_split/1km/nl_tb_per_pixel.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/500m/TB_reports_risk_per_pixel.csv" afterPath="$PROJECT_DIR$/data/no_split/500m/TB_reports_risk_per_pixel.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/500m/nl_centroids_500m_v1.12.csv" afterPath="$PROJECT_DIR$/data/no_split/500m/nl_centroids_500m_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/500m/nl_features_v1.12.csv" afterPath="$PROJECT_DIR$/data/no_split/500m/nl_features_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/data/no_split/500m/tb_risk_features_v1.12.csv" afterPath="$PROJECT_DIR$/data/no_split/500m/tb_risk_features_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/data/out/nl_classification_errors_RF_SPC1200.csv" afterPath="$PROJECT_DIR$/data/out/nl_classification_errors_RF_SPC1200.csv" />
+      <change beforePath="$PROJECT_DIR$/data/out/nl_classification_errors_RF_SPC2000.csv" afterPath="$PROJECT_DIR$/data/out/nl_classification_errors_RF_SPC2000.csv" />
+      <change beforePath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v0.csv" afterPath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v0.csv" />
+      <change beforePath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v0_copy.csv" afterPath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v0_copy.csv" />
+      <change beforePath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v1.csv" afterPath="$PROJECT_DIR$/data/poisson_leaves/RF_skewed_leaves_error_metrics_with_zeros_v1.csv" />
+      <change beforePath="$PROJECT_DIR$/data/split_resi_recr/nl_recr_risk_perpixel_features_v1.12.csv" afterPath="$PROJECT_DIR$/data/split_resi_recr/nl_recr_risk_perpixel_features_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/data/split_resi_recr/nl_resi_risk_perpixel_features_v1.12.csv" afterPath="$PROJECT_DIR$/data/split_resi_recr/nl_resi_risk_perpixel_features_v1.12.csv" />
+      <change beforePath="$PROJECT_DIR$/v1.0/analysis/00_classify_risk_muticlass_normal.py" afterPath="$PROJECT_DIR$/v1.0/analysis/00_classify_risk_muticlass_normal.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/analysis/01_classify_risk_multiclass_boxcox.py" afterPath="$PROJECT_DIR$/v1.0/analysis/01_classify_risk_multiclass_boxcox.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/analysis/02_classify_risk_multiclass_combined.py" afterPath="$PROJECT_DIR$/v1.0/analysis/02_classify_risk_multiclass_combined.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/analysis/04_classify_risk_multiclass_boxcox_500m.py" afterPath="$PROJECT_DIR$/v1.0/analysis/04_classify_risk_multiclass_boxcox_500m.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/analysis/07_explore_risk_poisson_leaves.py" afterPath="$PROJECT_DIR$/v1.0/analysis/07_explore_risk_poisson_leaves.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/carpentry/00_find_tb_per_pixel_v1.1.py" afterPath="$PROJECT_DIR$/v1.0/carpentry/00_find_tb_per_pixel_v1.1.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/carpentry/01_associate_tb_to_px.py" afterPath="$PROJECT_DIR$/v1.0/carpentry/01_associate_tb_to_px.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/carpentry/02_associate_tb_and_pixel_all.py" afterPath="$PROJECT_DIR$/v1.0/carpentry/02_associate_tb_and_pixel_all.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/carpentry/03_associate_tb_and_pixel_resi_recr.py" afterPath="$PROJECT_DIR$/v1.0/carpentry/03_associate_tb_and_pixel_resi_recr.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/carpentry/04_add_exposure_column_to_all_NL_pixels.py" afterPath="$PROJECT_DIR$/v1.0/carpentry/04_add_exposure_column_to_all_NL_pixels.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/00_test_for_normality.py" afterPath="$PROJECT_DIR$/v1.0/playground/00_test_for_normality.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/01_test_for_normality_remove_zeros_ones.py" afterPath="$PROJECT_DIR$/v1.0/playground/01_test_for_normality_remove_zeros_ones.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/02_fit_a_gamma_turn_it_gaussian.py" afterPath="$PROJECT_DIR$/v1.0/playground/02_fit_a_gamma_turn_it_gaussian.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/03_extract_target.py" afterPath="$PROJECT_DIR$/v1.0/playground/03_extract_target.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/04_fit_predict_poisson.py" afterPath="$PROJECT_DIR$/v1.0/playground/04_fit_predict_poisson.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/05_mahat_regression.py" afterPath="$PROJECT_DIR$/v1.0/playground/05_mahat_regression.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/06_simple_poisson.py" afterPath="$PROJECT_DIR$/v1.0/playground/06_simple_poisson.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/07_explore_rf.py" afterPath="$PROJECT_DIR$/v1.0/playground/07_explore_rf.py" />
+      <change beforePath="$PROJECT_DIR$/v1.0/playground/08_rf_poisson_leaves.py" afterPath="$PROJECT_DIR$/v1.0/playground/08_rf_poisson_leaves.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="03_regression_risk_skewed_leaves_test_all_spl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_test_all_spl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16896">
+              <caret line="704" column="18" lean-forward="false" selection-start-line="704" selection-start-column="18" selection-end-line="704" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02_associate_tb_and_pixel_all.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v1.0/carpentry/02_associate_tb_and_pixel_all.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1118">
+              <caret line="77" column="76" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11_make_five_maps_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4440">
+              <caret line="203" column="41" lean-forward="false" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11_make_five_maps_v2_logscale.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2_logscale.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3312">
+              <caret line="156" column="23" lean-forward="false" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="13_make_tick_bite_risk_map_logscale.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/13_make_tick_bite_risk_map_logscale.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2712">
+              <caret line="137" column="17" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="14_animation_hazard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/14_animation_hazard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="40" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="15_animation_hazard_basemap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/15_animation_hazard_basemap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2760">
+              <caret line="123" column="17" lean-forward="false" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="16_animation_hazard_basemap2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/playground/16_animation_hazard_basemap2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4032">
+              <caret line="176" column="22" lean-forward="false" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="osr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/osgeo/osr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30888">
+              <caret line="1287" column="0" lean-forward="false" selection-start-line="1287" selection-start-column="0" selection-end-line="1287" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09_four_exposure_layers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1.1/analysis/09_four_exposure_layers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1392">
+              <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>writer</find>
+      <find>log</find>
+      <find>scale</find>
+      <find>30</find>
+      <find>log10</find>
+      <find>taylor</find>
+      <find>np.round</find>
+      <find>np.log</find>
+      <find>Hazard.tif</find>
+      <find>run_models</find>
+      <find>run_mode</find>
+      <find>trim_board</find>
+      <find>laxes</find>
+      <find>haz</find>
+      <find>name_long</find>
+      <find>cartopy</find>
+      <find>init_run</find>
+      <find>path_in</find>
+      <find>inproj</find>
+      <find>set_extet</find>
+      <find>create_map</find>
+      <find>get_projec</find>
+      <find>create</find>
+      <find>plt.show()</find>
+      <find>read_tif</find>
+      <find>get_projecti</find>
+      <find>proj =</find>
+      <find>cbar</find>
+      <find>Hazard</find>
+      <find>tb_risk_features</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>log</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/v1.0</dir>
+      <dir>$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics</dir>
+      <dir>$PROJECT_DIR$/v1.1/analysis</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>D:\UTwente\PycharmProjects\04_Risk_Model\v1.1</dir>
+      <dir>D:\UTwente\PycharmProjects\04_Risk_Model\v1.1\analysis</dir>
+      <dir>D:\UTwente\PycharmProjects\04_Risk_Model</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/skewed_leaves/short_run_4mod_v1.0_error_metrics_NESTI_20.csv" />
+        <option value="$PROJECT_DIR$/v1.1/playground/band.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/04_find_p_and_lambda.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/05_make_maps.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/00_risk_per_BBG.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/01_risk_per_LGN.py" />
+        <option value="$PROJECT_DIR$/v1.0/analysis/13_regression_risk_poisson_leaves_predict.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/00_fix_testing_one_run.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_all_spl_pred_all_tif.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/02_taylor_diagrams.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/__init__.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/taylor_statistics.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/07_is_taylor_working.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/matplotlib/axes/_base.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/05_taylor_diagrams_all_spl.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/08_compare_with_tickbites.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/plot_taylor_obs.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/get_taylor_diagram_options.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/overlay_taylor_diagram_circles.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/overlay_taylor_diagram_lines.py" />
+        <option value="$PROJECT_DIR$/v1.0/analysis/07_explore_risk_poisson_leaves.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/08_samples_per_leaf_ensemble.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/04_check_fitting_of_distributions_all_spl.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/plot_taylor_axes.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/plot_pattern_diagram_markers.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/10_count_singmats.py" />
+        <option value="$USER_HOME$/miniconda3/envs/TEST/lib/python3.5/site-packages/skill_metrics/plot_target_axes.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/09_four_exposure_layers.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/13_explore_risk_skewed_leaves.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/14_explore_risk_skewed_leaves.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/09_tick_bites_gardens.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/10_land_cover_of_gardeners.py" />
+        <option value="$PROJECT_DIR$/v1.0/analysis/14_check_fitting_of_distributions.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/11_plot_all_histograms.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/02_test_predict.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/03_tomap.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/06_make_five_maps.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/12_predictions_vs_truevals.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/15_plot_all_histograms_nozeros.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/07_compare_with_exposure.py" />
+        <option value="$PROJECT_DIR$/v1.0/playground/14_fix_observations.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/12_tb_above_thirty.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_test_all_spl.py" />
+        <option value="$PROJECT_DIR$/v1.1/analysis/06_taylor_diagrams_all_spl_batches_style.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/13_make_tick_bite_risk_map_logscale.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/14_animation_hazard.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/15_animation_hazard_basemap.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/16_animation_hazard_basemap2.py" />
+        <option value="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2_logscale.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="6" />
+    <option name="width" value="2548" />
+    <option name="height" value="1399" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="04_Risk_Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_Risk_Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="04_Risk_Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_Risk_Model" type="462c0819:PsiDirectoryNode" />
+              <item name="v1.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="04_Risk_Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_Risk_Model" type="462c0819:PsiDirectoryNode" />
+              <item name="v1.1" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="G:/acies/workspace" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\UTwente\PycharmProjects\04_Risk_Model\v1.1\playground" />
+      <recent name="$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor" />
+      <recent name="$PROJECT_DIR$/data/mask" />
+      <recent name="$PROJECT_DIR$/data/skewed_leaves" />
+      <recent name="$PROJECT_DIR$/v1.0/carpentry" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/data/tifs" />
+      <recent name="$PROJECT_DIR$/data/no_split/1km" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.11_make_five_maps_v2_logscale">
+    <configuration name="11_make_five_maps_v2_logscale" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1.1/playground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="04_Risk_Model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2_logscale.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="13_make_tick_bite_risk_map_logscale" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1.1/playground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="04_Risk_Model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1.1/playground/13_make_tick_bite_risk_map_logscale.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="14_animation_hazard" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1.1/playground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="04_Risk_Model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1.1/playground/14_animation_hazard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="15_animation_hazard_basemap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1.1/playground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="04_Risk_Model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1.1/playground/15_animation_hazard_basemap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="16_animation_hazard_basemap2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1.1/playground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="04_Risk_Model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1.1/playground/16_animation_hazard_basemap2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.11_make_five_maps_v2_logscale" />
+      <item index="1" class="java.lang.String" itemvalue="Python.13_make_tick_bite_risk_map_logscale" />
+      <item index="2" class="java.lang.String" itemvalue="Python.14_animation_hazard" />
+      <item index="3" class="java.lang.String" itemvalue="Python.15_animation_hazard_basemap" />
+      <item index="4" class="java.lang.String" itemvalue="Python.16_animation_hazard_basemap2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.11_make_five_maps_v2_logscale" />
+        <item index="1" class="java.lang.String" itemvalue="Python.16_animation_hazard_basemap2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.15_animation_hazard_basemap" />
+        <item index="3" class="java.lang.String" itemvalue="Python.14_animation_hazard" />
+        <item index="4" class="java.lang.String" itemvalue="Python.13_make_tick_bite_risk_map_logscale" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20b179fc-53b1-4f5a-a5da-04e5bd9c1ef9" name="Default" comment="" />
+      <created>1531466456475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531466456475</updated>
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1535995749188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535995749188</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52842987" sideWeight="0.5005255" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24282786" sideWeight="0.49947453" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2074795" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889345" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47181627" sideWeight="0.50026274" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38132498" sideWeight="0.49973726" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22175512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/v1.0/playground/01_test_for_normality_remove_zeros_ones.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_test_all_spl.py</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/13_explore_risk_skewed_leaves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="540" column="0" lean-forward="false" selection-start-line="540" selection-start-column="0" selection-end-line="540" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/analysis/00_classify_risk_muticlass_normal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/NL_all_with_comments_RD_New_ready.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/analysis/14_check_fitting_of_distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="224" column="81" lean-forward="true" selection-start-line="224" selection-start-column="28" selection-end-line="224" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/07_is_taylor_working.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/02_taylor_diagrams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/05_taylor_diagrams_all_spl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1576">
+          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/09_tick_bites_gardens.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/04_find_p_and_lambda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7992">
+          <caret line="348" column="28" lean-forward="false" selection-start-line="348" selection-start-column="22" selection-end-line="348" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/08_samples_per_leaf_ensemble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="62" column="59" lean-forward="false" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/playground/04_fit_predict_poisson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/skewed_leaves/prediction_nl_four_models_v3_20T_200S.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/skewed_leaves/prediction_nl_true_values.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884784">
+          <caret line="36866" column="0" lean-forward="false" selection-start-line="36866" selection-start-column="0" selection-end-line="36866" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/12_predictions_vs_truevals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24768">
+          <caret line="1083" column="4" lean-forward="false" selection-start-line="1083" selection-start-column="4" selection-end-line="1083" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/11_plot_all_histograms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/analysis/13_regression_risk_poisson_leaves_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9864">
+          <caret line="427" column="41" lean-forward="false" selection-start-line="427" selection-start-column="41" selection-end-line="427" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/03_tomap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="79" column="109" lean-forward="false" selection-start-line="79" selection-start-column="72" selection-end-line="79" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/02_test_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9480">
+          <caret line="413" column="54" lean-forward="false" selection-start-line="413" selection-start-column="54" selection-end-line="413" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/06_make_five_maps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3768">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/00_fix_testing_one_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13776">
+          <caret line="589" column="22" lean-forward="false" selection-start-line="589" selection-start-column="14" selection-end-line="589" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/15_plot_all_histograms_nozeros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2688">
+          <caret line="115" column="65" lean-forward="false" selection-start-line="115" selection-start-column="65" selection-end-line="115" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/08_compare_with_tickbites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4056">
+          <caret line="175" column="24" lean-forward="false" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/07_compare_with_exposure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2726">
+          <caret line="172" column="39" lean-forward="false" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/skewed_leaves/to_keep_for_taylor/testing_SPL200_NESTI20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1732">
+          <caret line="14747" column="0" lean-forward="false" selection-start-line="14747" selection-start-column="0" selection-end-line="14747" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/carpentry/01_associate_tb_to_px.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/carpentry/00_find_tb_per_pixel_v1.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/split_resi_recr/nl_recr_risk_perpixel_features_v1.12.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/no_split/500m/TB_reports_risk_per_pixel.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/band.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/carpentry/06_add_hazard_column_v1.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/out/NL_Tick_Bites_2006_2016_NK_TR_features.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="3414" column="150" lean-forward="false" selection-start-line="3414" selection-start-column="150" selection-end-line="3414" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/playground/14_fix_observations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/out/NL_Tick_Bites_2006_2016_NK_TR_features_v2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/14_explore_risk_skewed_leaves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="703" column="10" lean-forward="false" selection-start-line="703" selection-start-column="10" selection-end-line="703" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/12_tb_above_thirty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/06_taylor_diagrams_all_spl_batches_style.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3888">
+          <caret line="166" column="33" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/09_four_exposure_layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="203" column="41" lean-forward="false" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/cartopy/mpl/gridliner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9168">
+          <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/cartopy/feature/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/cartopy/mpl/geoaxes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="587" column="0" lean-forward="false" selection-start-line="587" selection-start-column="0" selection-end-line="587" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/matplotlib/axes/_subplots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/13_make_tick_bite_risk_map_logscale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2712">
+          <caret line="137" column="17" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/defaultpy36/Lib/site-packages/osgeo/osr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30888">
+          <caret line="1287" column="0" lean-forward="false" selection-start-line="1287" selection-start-column="0" selection-end-line="1287" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/14_animation_hazard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/15_animation_hazard_basemap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="123" column="17" lean-forward="false" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/16_animation_hazard_basemap2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4032">
+          <caret line="176" column="22" lean-forward="false" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/playground/11_make_five_maps_v2_logscale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="156" column="23" lean-forward="false" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.1/analysis/03_regression_risk_skewed_leaves_test_all_spl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16896">
+          <caret line="704" column="18" lean-forward="false" selection-start-line="704" selection-start-column="18" selection-end-line="704" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1.0/carpentry/02_associate_tb_and_pixel_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="77" column="76" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
